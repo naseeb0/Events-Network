@@ -3704,7 +3704,7 @@ color-string@^1.9.0:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^3.1.2:
+color@3.1.3, color@^3.1.2:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.3.tgz#ca67fb4e7b97d611dcde39eceed422067d91596e"
   dependencies:
@@ -7250,6 +7250,13 @@ react-native-maps@1.3.2:
   integrity sha512-NB7HGRZOgxxXCWzrhIVucx/bsrEWANvk3DLci1ov4P9MQnEVQYQCCkTxsnaEvO191GeBOCRDyYn6jckqbfMtmg==
   dependencies:
     "@types/geojson" "^7946.0.8"
+
+react-native-paper-autocomplete@^0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/react-native-paper-autocomplete/-/react-native-paper-autocomplete-0.11.7.tgz#d98090cc05663788ad4081bcc7a65feb0ec0bf67"
+  integrity sha512-d6Uk6iTOVKSU9n+asOmAJROxxxcjeKAN3qlkyX+aItErk2vE/+dKNX/jgbC17YHCwSfHrVotLrbuRheonh91qg==
+  dependencies:
+    color "3.1.3"
 
 react-native-paper@^4.12.5:
   version "4.12.5"

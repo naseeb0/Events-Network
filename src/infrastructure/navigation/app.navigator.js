@@ -17,6 +17,7 @@ const TAB_ICON = {
   Restaurants: "md-restaurant",
   Map: "md-map",
   Settings: "md-settings",
+  Events: "md-calendar",
 };
 
 const createScreenOptions = ({ route }) => {
@@ -39,7 +40,7 @@ export const AppNavigator = () => (
             inactiveTintColor: colors.brand.muted,
           }}
         >
-          <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
+          <Tab.Screen name="Events" component={RestaurantsNavigator} />
           <Tab.Screen name="Map" component={MapScreen} />
           <Tab.Screen name="Settings" component={SettingsNavigator} />
         </Tab.Navigator>

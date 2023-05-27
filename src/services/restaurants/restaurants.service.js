@@ -1,5 +1,7 @@
 import { mocks, mockImages } from "./mock";
 import camelize from "camelize";
+import { getImageUrlByName } from './mock';
+
 
 export const restaurantsRequest = (location) => {
   return new Promise((resolve, reject) => {
@@ -11,10 +13,11 @@ export const restaurantsRequest = (location) => {
   });
 };
 
-export const restaurantsTransform = ({ results = [] }) => {
+export const restaurantsTransform = ({ results = [], eventName}) => {
+
   const mappedResults = results.map((restaurant) => {
     restaurant.photos = restaurant.photos.map((p) => {
-      return mockImages[Math.ceil(Math.random() * (mockImages.length - 1))];
+      return getImageUrlByName(restaurant.eventName);
     });
 
     return {

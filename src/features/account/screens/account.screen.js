@@ -1,5 +1,6 @@
 import React from "react";
 import LottieView from "lottie-react-native";
+import { View, Image } from "react-native";
 
 import { Spacer } from "../../../components/spacer/spacer.component";
 import {
@@ -15,7 +16,7 @@ export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
       <AccountCover />
-      <AnimationWrapper>
+      {/* <AnimationWrapper>
         <LottieView
           key="animation"
           autoPlay
@@ -23,7 +24,13 @@ export const AccountScreen = ({ navigation }) => {
           resizeMode="cover"
           source={require("../../../../assets/watermelon.json")}
         />
-      </AnimationWrapper>
+      </AnimationWrapper> */}
+    <View>
+      <Image
+        source={require("../../../../assets/1icon.png")} // Replace with your image path
+        style={{ width: 300, height: 300 }} // Adjust the width and height to your desired size
+      />
+    </View>
       <Title>Events Network</Title>
       <AccountContainer>
         <AuthButton

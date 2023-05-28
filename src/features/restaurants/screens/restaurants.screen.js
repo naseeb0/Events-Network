@@ -31,6 +31,7 @@ export const RestaurantsScreen = ({ navigation }) => {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
+   
     <SafeArea>
       {isLoading && (
         <LoadingContainer>
@@ -70,5 +71,6 @@ export const RestaurantsScreen = ({ navigation }) => {
         keyExtractor={(item) => item.name}
       />
     </SafeArea>
+    
   );
 };

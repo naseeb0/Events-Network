@@ -8,6 +8,7 @@ export const LocationContextProvider = ({ children }) => {
   const [keyword, setKeyword] = useState("San Francisco");
   const [location, setLocation] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchSuggestions, setSearchSuggestions] = useState([]);
   const [error, setError] = useState(null);
 
   const onSearch = (searchKeyword) => {
@@ -38,6 +39,9 @@ export const LocationContextProvider = ({ children }) => {
         isLoading,
         error,
         location,
+        setKeyword,
+        searchSuggestions,
+        setSearchSuggestions,
         search: onSearch,
         keyword,
       }}

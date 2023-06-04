@@ -29,6 +29,7 @@ export const AccountScreen = ({ navigation }) => {
       <Image
         source={require("../../../../assets/1icon.png")} // Replace with your image path
         style={{ width: 300, height: 300 }} // Adjust the width and height to your desired size
+        //added image for login
       />
     </View>
       <Title>Events Network</Title>
